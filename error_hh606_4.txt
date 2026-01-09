@@ -1,0 +1,107 @@
+﻿node.exe : [31
+m[1mError[22m
+[39m [31m[1m
+HH606:[22m[39
+m The project 
+cannot be 
+compiled, see 
+reasons below.
+At C:\Program F
+iles\nodejs\npx
+.ps1:29 char:3
++   & 
+$NODE_EXE 
+$NPX_CLI_JS 
+$args
++   ~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+~~~
+    + Category 
+   Info        
+      : NotS   
+ pecified:     
+([31m[1m    
+Error...     
+reasons be    
+low.:Strin    
+g) [], Rem    
+oteExcepti    
+on
+    + FullyQua 
+   lifiedErro  
+  rId : Nati   
+ veCommandE    
+rror
+ 
+
+The Solidity 
+version pragma 
+statement in 
+these files 
+doesn't match 
+any of the 
+configured 
+compilers in 
+your config. 
+Change the 
+pragma or 
+configure 
+additional 
+compiler 
+versions in 
+your hardhat 
+config.
+
+  * @openzeppel
+in/contracts-up
+gradeable/proxy
+/utils/UUPSUpgr
+adeable.sol 
+(^0.8.22)
+  * @openzeppel
+in/contracts/pr
+oxy/ERC1967/ERC
+1967Utils.sol 
+(^0.8.21)
+
+These files 
+and its 
+dependencies 
+cannot be 
+compiled with 
+your config. 
+This can 
+happen because 
+they have 
+incompatible 
+Solidity 
+pragmas, or 
+don't match 
+any of your 
+configured 
+Solidity 
+compilers.
+
+  * contracts/T
+okenVaultV1.sol
+
+To learn more, 
+run the 
+command again 
+with --verbose
+
+Read about 
+compiler 
+configuration 
+at https://v2.h
+ardhat.org/conf
+ig
+
+For more info 
+go to https://v
+2.hardhat.org/H
+H606 or run 
+Hardhat with --
+show-stack-trac
+es
+

@@ -1,0 +1,5 @@
+[31m[1mError[22m[39m [31m[1mHH19:[22m[39m Your project is an ESM project (you have "type": "module" set in your package.json) but your Hardhat config file uses the .js extension.
+
+Rename the file to use the .cjs to fix this problem.
+
+For more info go to https://v2.hardhat.org/HH19 or run Hardhat with --show-stack-traces

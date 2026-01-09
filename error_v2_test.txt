@@ -1,0 +1,41 @@
+﻿
+
+  TokenVault Upgrade V1 to V2
+    Γ£ö should preserve user balances after upgrade (90ms)
+    Γ£ö should maintain admin access control after upgrade (53ms)
+    Γ£ö should allow setting yield rate in V2 (38ms)
+    1) should calculate and claim yield correctly
+    2) should allow pausing deposits in V2
+
+
+  3 passing (2s)
+  2 failing
+
+  1) TokenVault Upgrade V1 to V2
+       should calculate and claim yield correctly:
+     Error: VM Exception while processing transaction: reverted with reason string 'No yield to claim'
+    at TokenVaultV2.claimYield (contracts/TokenVaultV2.sol:34)
+    at <UnrecognizedContract>.<unknown> (0x4ed7c70f96b99c776995fb64377f0d4ab3b0e1c1)
+    at EdrProviderWrapper.request (node_modules\hardhat\src\internal\hardhat-network\provider\provider.ts:455:41)
+    at HardhatEthersSigner.sendTransaction (node_modules\@nomicfoundation\hardhat-ethers\src\signers.ts:185:18)
+    at send (node_modules\ethers\src.ts\contract\contract.ts:313:20)
+    at Proxy.claimYield (node_modules\ethers\src.ts\contract\contract.ts:352:16)
+    at Context.<anonymous> (test\upgrade-v1-to-v2.test.js:100:9)
+  
+
+  2) TokenVault Upgrade V1 to V2
+       should allow pausing deposits in V2:
+     Error: VM Exception while processing transaction: reverted with custom error 'ReentrancyGuardReentrantCall()'
+    at TokenVaultV2._nonReentrantBefore (@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:86)
+    at TokenVaultV2.nonReentrant (@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:77)
+    at TokenVaultV2.deposit (contracts/TokenVaultV2.sol:121)
+    at <UnrecognizedContract>.<unknown> (0xc5a5c42992decbae36851359345fe25997f5c42d)
+    at EdrProviderWrapper.request (node_modules\hardhat\src\internal\hardhat-network\provider\provider.ts:455:41)
+    at HardhatEthersSigner.sendTransaction (node_modules\@nomicfoundation\hardhat-ethers\src\signers.ts:185:18)
+    at send (node_modules\ethers\src.ts\contract\contract.ts:313:20)
+    at Proxy.deposit (node_modules\ethers\src.ts\contract\contract.ts:352:16)
+    at Context.<anonymous> (test\upgrade-v1-to-v2.test.js:132:9)
+  
+
+
+
