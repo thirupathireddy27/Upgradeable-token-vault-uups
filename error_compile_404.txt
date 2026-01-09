@@ -1,3 +1,0 @@
-[31m[1mError[22m[39m [31m[1mHH404:[22m[39m File @openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol, imported from contracts/TokenVaultV1.sol, not found.
-
-For more info go to https://v2.hardhat.org/HH404 or run Hardhat with --show-stack-traces
